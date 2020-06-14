@@ -65,7 +65,7 @@
                 
                 <div class="row">
                     <div class="col">
-                        <a href="mailto:jy4uk@virginia.edu" class="button">Get in touch!</a>
+                        <a id="email" href="mailto:jy4uk@virginia.edu" class="button">Get in touch!</a>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
             <div class="container" id="about-section">
                 <div class="row">
                     <div class="col">
-                        <h3 class="about-section">About Me</h3>
+                        <h3 class="section-head">About Me</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -123,10 +123,11 @@
 
         <!--Projects-->
         <div id="my-projects" class="projects">
+            <!--TRYING SOMETHING NEW-->
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h3 >My Projects</h3>
+                        <h3 class="section-head">My Projects</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -134,58 +135,73 @@
                         <p id="project-descriptor">I have been working on many projects since I started coding. Here a few that I am especially proud of! 
                             <span class="github">See the rest of my work on <a target="_blank" href="https://www.github.com/jy4uk">Github</a></span>.
                         </p>
+                        
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                      <div class="card" style="width: 18rem;"> 
-                        <!--<img class="card-img-top" src="./resources/ellipsis.png" alt="PHP, HTML, CSS, JS">-->
-                        <div class="card-body">
-                          <h5 class="card-title">Ellipsis</h5>
-                          <p class="card-text">A full stack project developed as a collaborative storywriting platform. Users can log into their accounts
-                            and create or contribute to stories. When a story is finished, it can be published or archived.
-                          </p>
-                          <a href="https://github.com/jy4uk/ellipsis" target="_blank" class="btn repo-button">See the Repo</a>
-                        </div>
-                      </div>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="row justify-content-center">
+                                    <div class="col-7">
+                                        <h4 class="project-title">Ellipsis</h4>
+                                        <p class="project-desc">A full stack project developed as a collaborative storywriting platform. Users can log into their accounts
+                                            and create or contribute to stories. When a story is finished, it can be published or archived.</p>
+                                        <div class="row justify-content-center space-button">
+                                            <a href="https://github.com/jy4uk/ellipsis" target="_blank" class="btn repo-button">See the Repo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                  <div class="row justify-content-center">
+                                    <div class="col-7 ">
+                                        <h4 class="project-title">Spotify Track</h4>
+                                        <p class="project-desc"><span class="yellow-warning">Currently in development!</span> A web application that returns users information
+                                            about their listening habits such as: favorite artists, top songs, and favorite albums. There is a photomosaic feature being developed too!
+                                        </p>
+                                        <div class="row justify-content-center space-button">
+                                            <a href="https://github.com/jy4uk/spotifyTrack" target="_blank" class="btn repo-button">See the Repo</a>
+                                        </div>
+                                    </div> 
+                                  </div> 
+                              </div>
+                              <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                  <div class="col-7">
+                                    <h4 class="project-title">Text 2 Sound</h2>
+                                    <p class="project-desc">This program combines my passion for music with my love for coding. I used the <span class="midi">Midi Util</span> library
+                                        to convert a user's inputed ASCII values into discrete musical notes. The program then outputs the sonified text as a MIDI file
+                                        that can be directly input into a Digital Audio Workstation such as Logic Pro X.</p>
+                                        <div class="row justify-content-center">
+                                            <a href="https://github.com/jy4uk/text2Sound" target="_blank" class="btn repo-button">See the Repo</a>
+                                        </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
                     </div>
-                    <div class="col">
-                      <div class="card" style="width: 18rem;"> 
-                        <!--<img class="card-img-top" src="./resources/spotify.png" alt="PHP, HTML, CSS, JS">-->
-                        <div class="card-body">
-                          <h5 class="card-title">Spotify WebApp</h5>
-                          <p class="card-text"><span class="yellow-warning">Currently in development!</span> A web application that returns users information
-                            about their listening habits such as: favorite artists, top songs, and favorite albums. There is a photomosaic feature being developed too!
-                          </p>
-                          <a href="https://github.com/jy4uk/spotifyTrack" target="_blank" class="btn repo-button">See the Repo</a>
-                          <br>
-                          <br>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card" style="width: 18rem;"> 
-                        <!--<img class="card-img-top" src="./resources/python.png" alt="PHP, HTML, CSS, JS">-->
-                        <div class="card-body">
-                          <h5 class="card-title">Text 2 Sound</h5>
-                          <p class="card-text">This program combines my passion for music with my love for coding. I used the <span class="midi">Midi Util</span> library
-                            to convert a user's inputed ASCII values into discrete musical notes. The program then outputs the sonified text as a MIDI file
-                            that can be directly input into a Digital Audio Workstation such as Logic Pro X.
-                          </p>
-                          <a href="https://github.com/jy4uk/text2sound" target="_blank" class="btn repo-button">See the Repo</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                </div>
             </div>
-        </div>
+            <!--END OF TRYING-->
 
         <!--Experience-->
         <div id="experience-section" class="experience">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h3>Experience</h3>
+                        <h3 class="section-head">Experience</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -207,7 +223,7 @@
                                 <a id="job-title" data-toggle="tab" href="#tutoring">Mathematics Tutor</a>
                             </li>
                             <li>
-                                <a id="job-title" data-toggle="tab" href="#your-company">??</a>
+                                <a id="job-title" data-toggle="tab" href="#your-company">What's Next?</a>
                             </li>
                           </ul>
                           
@@ -218,6 +234,7 @@
                               <br>
                               <h8>Jan 2019 - Present</h8>
                               <ul>
+                                  <li>Teaching Assistant for Advanced Software Development Methods (OOP).</li>
                                   <li>Work with course professors and head TA’s closely to help build out course material and assignments.</li>
                                   <li>Hold office hours and facilitated lab sections to assist students with learning OOP concepts and homework questions.</li>
                                   <li>Contribute to developing new course plans for virtual instruction and online lab/office hours.</li>
@@ -252,8 +269,8 @@
                                 <br>
                                 <h8>Post-Grad May 2021</h8>
                                 <ul>
-                                    <li>I have no location preferences!</li>
-                                    <li>Full-Stack/Back-end Developer position preferred</li>
+                                    <li>Looking for full-time entry level job.</li>
+                                    <li>Full-Stack/Back-end Developer position preferred.</li>
                                     <li>Will work in exchange for Korean barbecue and LaCroix</li>
                                 </ul>
                               </div>
@@ -269,7 +286,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h3>Get in touch</h3>
+                        <h3 class="section-head">Get in touch</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -283,7 +300,7 @@
                 </div>
                 <div class="row">
                     <div id="email-me-btn" class="col">
-                        <a href="mailto:jy4uk@virginia.edu" class="button">Email Me</a>
+                        <a id="email" href="mailto:jy4uk@virginia.edu" class="button">Email Me</a>
                     </div>
                 </div>
             </div>

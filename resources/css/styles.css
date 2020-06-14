@@ -1,5 +1,5 @@
 * {
-    font-family: alegreya !important;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #resume {
@@ -41,10 +41,10 @@ body{
     background-color: floralwhite !important;
 }
 
-.button {
+.button, .btn {
     background-color: #a4c2ff!important;
     border: none;
-    padding: 15px 32px;
+    padding: 15px 28px;
     text-align: center;
     margin: 4px 2px;
     cursor: pointer;
@@ -53,17 +53,17 @@ body{
     border-radius: 10px;
 }
 
-.repo-button {
-    background-color:#ffe1a4 !important;
-    color: white;
+.button:hover {
+    background-color: #71a0ff;
 }
+
 
 .about{
     padding-top: 15rem;
 }
 
-.about-section{
-    padding-bottom: 2rem;
+.section-head{
+    padding-bottom: 1rem;
 }
 
 .about-me, #my-projects{
@@ -88,7 +88,7 @@ body{
     font-weight: bold;
 }
 
-.card-title{
+.project-title{
     font-weight: bold;
     color:black;
 }
@@ -141,4 +141,25 @@ footer {
 
 #email-me-btn {
     padding-top: 8rem;
+}
+
+.experience{
+    padding-top: 15rem;
+}
+
+#email {
+    font-size: x-large;
+}
+
+.yellow-warning{
+    color: #f9b100;
+    font-weight: bold;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    filter: invert();
+}
+
+.space-button{
+    padding-top: 1.6rem;
 }
