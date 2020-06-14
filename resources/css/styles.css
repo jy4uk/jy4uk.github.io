@@ -6,6 +6,11 @@
     color: teal;
 }
 
+.navbar-nav{
+    margin-right: 25rem;
+}
+
+
 #resume:hover {
     color: white;
 }
@@ -59,7 +64,7 @@ body{
 
 
 .about{
-    padding-top: 15rem;
+    padding-top: 10rem;
 }
 
 .section-head{
@@ -84,7 +89,6 @@ body{
 
 #technologies {
     padding-left: 2rem;
-    padding-bottom: 15rem;
     color: #a4c2ff;
     font-weight: bold;
 }
@@ -99,7 +103,7 @@ body{
 }
 
 .projects {
-    padding-bottom: 15rem;
+    padding-top: 10rem;
 }
 
 .github {
@@ -116,7 +120,7 @@ body{
 }
 
 .contact{
-    padding-top: 15rem;
+    padding-top: 10rem;
 }
 
 #job-title{
@@ -145,7 +149,7 @@ footer {
 }
 
 .experience{
-    padding-top: 15rem;
+    padding-top: 10rem;
 }
 
 #email {
