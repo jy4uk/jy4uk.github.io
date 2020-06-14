@@ -1,0 +1,144 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#resume {
+    color: teal;
+}
+
+#resume:hover {
+    color: white;
+}
+
+.nav-link {
+    font-family: 'Courier New', Courier, monospace
+}
+
+body {
+    padding-top: 120px;
+}
+
+#hello-world{
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#i-code {
+    color: gray;
+}
+
+.intro-statement, .intro-paragraph{
+    padding-bottom: 5rem;
+    margin-bottom: 2em;
+}
+
+.development{
+    color: #a4c2ff;
+    font-weight: bold;
+}
+
+body{
+    background-color: floralwhite !important;
+}
+
+.button {
+    background-color: #a4c2ff!important;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    border-radius: 10px;
+}
+
+.repo-button {
+    background-color:#ffe1a4 !important;
+    color: white;
+}
+
+.about{
+    padding-top: 15rem;
+}
+
+.about-section{
+    padding-bottom: 2rem;
+}
+
+.about-me, #my-projects{
+    padding-bottom: 5px;
+}
+
+.uva{
+    font-weight: bold;
+    font-style: italic;
+    color: #a4c2ff;
+}
+
+#mypic {
+    width: 150%;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px gray ;
+}
+
+#technologies {
+    padding-bottom: 15rem;
+    color: #a4c2ff;
+    font-weight: bold;
+}
+
+.card-title{
+    font-weight: bold;
+    color:black;
+}
+
+.card-text{
+    color: black;
+}
+
+.projects {
+    padding-bottom: 15rem;
+}
+
+.github {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#project-descriptor {
+    padding-bottom: 3rem;
+}
+
+.card{
+    background-color: #a4c2ff !important;
+}
+
+.contact{
+    padding-top: 15rem;
+}
+
+#job-title{
+    padding-right: 6rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#job-location{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer-link{
+    color:#a4c2ff;
+}
+
+footer {
+    padding-top: 10rem;
+    text-align: center;
+    font-size: small;
+}
+
+#email-me-btn {
+    padding-top: 8rem;
+}

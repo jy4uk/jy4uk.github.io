@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!--All of the css and stylesheet links etc.-->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./resources/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>James Yang | Software Developer</title>
+    </head>
+
+    <!--BODY-->
+    <body>
+
+        <!--NAVBAR-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="resources/brandimage.png" alt="James Yang"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+              <div id="navbarSupportedContent" class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#my-projects">My Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience-section">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="resume" class="nav-link" href="resources/resume.pdf" target="_blank">Resume</a>
+                    </li>
+                </ul>
+              </div>
+          </nav>
+
+        <!--INTRO-->
+
+        <div class="intro">
+            <div class="container">
+                <div class="row ">
+                    <div class="col intro-statement">
+                        <h5 id="hello-world">Hello World! My name is</h4>
+                        <h1 id="jamesyang">James Yang</h1>
+                        <h1 id="i-code">I write programs.</h1>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-6">
+                        <p class="short-intro intro-paragraph">
+                            I am fourth-year student at the University of Virginia. I am primarily interested in <span class="development">full stack</span>
+                            or <span class= development>back-end</span> development, but recently I have been learning
+                            and thoroughly enjoying <span class="development">front-end</span> development as well!
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <a href="mailto:jy4uk@virginia.edu" class="button">Get in touch!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--ABOUT-->
+        <div class="about">
+            <div class="container" id="about-section">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="about-section">About Me</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7">
+                        <p class="about-me">
+                            Hello! I'm James, a Computer Science and Music double major at the <span><a class="uva" target="_blank" href="https://www.virginia.edu">University of Virginia</a></span>. 
+                            I am currently based in Charlottesville, VA and searching for a full-time software development position.
+                            I am passionate about technology and the role it plays in moving society forward and developing our world. 
+                        </p>
+                        <p class="about-me">
+                            Due to the COVID-19 outbreak, I like many students, had my summer internship offer rescinded. I have been using
+                            my time this summer to sharpen my toolset with CodeAcademy's courses. I have also been developing a Spotify web
+                            app along with other small side-projects. 
+                        </p>
+                        <p class="about-me"> 
+                            I have been programing for over three years. Here are a few technologies I've been using recently.
+                        </p>
+                    </div>
+                    <div class="col-1">
+
+                    </div>
+                    <div class="col-3">
+                        <img id="mypic" src="resources/about-image.jpg"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <ul id="technologies">
+                            <li>Javascript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul id="technologies">
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>C++</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Projects-->
+        <div id="my-projects" class="projects">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3 >My Projects</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p id="project-descriptor">I have been working on many projects since I started coding. Here a few that I am especially proud of! 
+                            <span class="github">See the rest of my work on <a target="_blank" href="https://www.github.com/jy4uk">Github</a></span>.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                      <div class="card" style="width: 18rem;"> 
+                        <!--<img class="card-img-top" src="./resources/ellipsis.png" alt="PHP, HTML, CSS, JS">-->
+                        <div class="card-body">
+                          <h5 class="card-title">Ellipsis</h5>
+                          <p class="card-text">A full stack project developed as a collaborative storywriting platform. Users can log into their accounts
+                            and create or contribute to stories. When a story is finished, it can be published or archived.
+                          </p>
+                          <a href="https://github.com/jy4uk/ellipsis" target="_blank" class="btn repo-button">See the Repo</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card" style="width: 18rem;"> 
+                        <!--<img class="card-img-top" src="./resources/spotify.png" alt="PHP, HTML, CSS, JS">-->
+                        <div class="card-body">
+                          <h5 class="card-title">Spotify WebApp</h5>
+                          <p class="card-text"><span class="yellow-warning">Currently in development!</span> A web application that returns users information
+                            about their listening habits such as: favorite artists, top songs, and favorite albums. There is a photomosaic feature being developed too!
+                          </p>
+                          <a href="https://github.com/jy4uk/spotifyTrack" target="_blank" class="btn repo-button">See the Repo</a>
+                          <br>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card" style="width: 18rem;"> 
+                        <!--<img class="card-img-top" src="./resources/python.png" alt="PHP, HTML, CSS, JS">-->
+                        <div class="card-body">
+                          <h5 class="card-title">Text 2 Sound</h5>
+                          <p class="card-text">This program combines my passion for music with my love for coding. I used the <span class="midi">Midi Util</span> library
+                            to convert a user's inputed ASCII values into discrete musical notes. The program then outputs the sonified text as a MIDI file
+                            that can be directly input into a Digital Audio Workstation such as Logic Pro X.
+                          </p>
+                          <a href="https://github.com/jy4uk/text2sound" target="_blank" class="btn repo-button">See the Repo</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <!--Experience-->
+        <div id="experience-section" class="experience">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Experience</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>Some of my work experience during my time in college</p>
+                    </div>
+                </div>
+                <!-- sidebar div-->
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a id="job-title" data-toggle="tab" href="#ta">Teaching Assistant</a>
+                            </li>
+                            <li>
+                                <a id="job-title" data-toggle="tab" href="#sep">Summer Enrichment Program</a>
+                            </li>
+                            <li>
+                                <a id="job-title" data-toggle="tab" href="#tutoring">Mathematics Tutor</a>
+                            </li>
+                            <li>
+                                <a id="job-title" data-toggle="tab" href="#your-company">??</a>
+                            </li>
+                          </ul>
+                          
+                          <div class="tab-content">
+                            <div id="ta" class="tab-pane fade in active">
+                              <h3>Teaching Assistant</h3>
+                              <h8 id="job-location" class="uva">University of Virginia</h8>
+                              <br>
+                              <h8>Jan 2019 - Present</h8>
+                              <ul>
+                                  <li>Work with course professors and head TA’s closely to help build out course material and assignments.</li>
+                                  <li>Hold office hours and facilitated lab sections to assist students with learning OOP concepts and homework questions.</li>
+                                  <li>Contribute to developing new course plans for virtual instruction and online lab/office hours.</li>
+                              </ul>
+                            </div>
+                            <div id="sep" class="tab-pane fade">
+                              <h3>Summer Enrichment Program</h3>
+                              <h8 id="job-location" class="uva">University of Virginia</h8>
+                              <br>
+                              <h8>Jun 2019 - August 2019</h8>
+                              <ul>
+                                  <li>Organized and ran a camp for gifted children across the U.S and internationally.</li>
+                                  <li>Managed and taught a “special topic” course for the children that gave them the opportunity to build a short
+                                    computer game.</li>
+                                  <li>Acted as the legal guardian for a group of twenty-four different children with a wide range of different
+                                    abilities and provided care and administered medicines for children with High Spectrum Autism, Narcolepsy, Asperger’s, Insomnia, and ADHD.</li>
+                              </ul>
+                            </div>
+                            <div id="tutoring" class="tab-pane fade">
+                              <h3>Mathematics Tutor</h3>
+                              <h8 id="job-location" class="uva">Charlottesville, VA</h8>
+                              <br>
+                              <h8>May 2019 - Jan 2020</h8>
+                              <ul>
+                                  <li>Helped high-school aged students with a wide range of math topics from algebra to calculus.</li>
+                                  <li>Assisted instructors with individual progress checkups and 1-on-1 tutoring.</li>
+                              </ul>
+                            </div>
+                            <div id="your-company" class="tab-pane fade">
+                                <h3>Your Company?</h3>
+                                <h8 id="job-location" class="uva">Where Your Company is Located</h8>
+                                <br>
+                                <h8>Post-Grad May 2021</h8>
+                                <ul>
+                                    <li>I have no location preferences!</li>
+                                    <li>Full-Stack/Back-end Developer position preferred</li>
+                                    <li>Will work in exchange for Korean barbecue and LaCroix</li>
+                                </ul>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+                <!--sidbar div end-->
+            </div>
+        </div>
+
+        <!--Contact-->
+        <div id="contact-section" class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Get in touch</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>I have been working incredibly hard these past few months to make up for my lack of experience. If your company
+                            has any entry-level software developer positions open, or if you would like to offer advice on the field of 
+                            computer science, or if you'd like to just get in touch. Feel free to email me at jy4uk@virginia.edu or click the button
+                            below to open the mail app directly!
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="email-me-btn" class="col">
+                        <a href="mailto:jy4uk@virginia.edu" class="button">Email Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <p>This website was built from scratch! Check out my github repo for the source code! <a id="footerlink" target="_blank" href="https://www.github.com/jy4uk/resumeWebsite">James Yang | CO 2021</a></p>
+        </footer>
+
+
+        <!--BOOSTRAP JS SCRIPTS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>
