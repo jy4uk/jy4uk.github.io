@@ -6,11 +6,6 @@
     color: teal;
 }
 
-.navbar-nav{
-    margin-right: 25rem;
-}
-
-
 #resume:hover {
     color: white;
 }
@@ -28,6 +23,8 @@ body {
     margin-bottom: 1em;
 }
 
+
+
 #i-code {
     color: gray;
 }
@@ -37,8 +34,12 @@ body {
     margin-bottom: 2em;
 }
 
+.intro-statement{
+    padding-bottom: 3rem;
+}
+
 .development{
-    color: #a4c2ff;
+    color: #71a0ff;
     font-weight: bold;
 }
 
@@ -78,7 +79,7 @@ body{
 .uva{
     font-weight: bold;
     font-style: italic;
-    color: #a4c2ff;
+    color: #73a1ff;
 }
 
 #mypic {
@@ -89,7 +90,7 @@ body{
 
 #technologies {
     padding-left: 2rem;
-    color: #a4c2ff;
+    color: #71a0ff;
     font-weight: bold;
 }
 
@@ -116,7 +117,7 @@ body{
 }
 
 .card{
-    background-color: #a4c2ff !important;
+    background-color: #73a1ff !important;
 }
 
 .contact{
@@ -127,6 +128,7 @@ body{
     padding-right: 6rem;
     font-size: 1.25rem;
     font-weight: bold;
+    color: #73a1ff;
 }
 
 #job-location{
@@ -135,7 +137,7 @@ body{
 }
 
 #footer-link{
-    color:#a4c2ff;
+    color:#73a1ff;
 }
 
 footer {
@@ -167,4 +169,15 @@ footer {
 
 .space-button{
     padding-top: 1.6rem;
+}
+
+#navbar {
+    transition: top 0.5s;
+}
+
+.sideways-left {
+    bottom: 0px;
+    z-index: -1;
+    position: fixed;
+    transform: rotate(90deg);
 }

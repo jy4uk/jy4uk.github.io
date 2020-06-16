@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./resources/css/styles.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>James Yang | Software Developer</title>
     </head>
 
@@ -15,7 +16,7 @@
     <body>
 
         <!--NAVBAR-->
-        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+        <nav id="navbar" class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
             <a class="navbar-brand" href="#"><img src="resources/brandimage.png" alt="James Yang"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -72,8 +73,8 @@
         </div>
 
         <!--ABOUT-->
-        <div class="about">
-            <div class="container" id="about-section">
+        <div data-aos="fade-up" data-aos-offset="200" id="about-section" class="about">
+            <div class="container" >
                 <div class="row">
                     <div class="col">
                         <h3 class="section-head">About Me</h3>
@@ -122,7 +123,7 @@
         </div>
 
         <!--Projects-->
-        <div id="my-projects" class="projects">
+        <div data-aos="fade-up" data-aos-offset="200" id="my-projects" class="projects">
             <!--TRYING SOMETHING NEW-->
             <div class="container">
                 <div class="row">
@@ -147,8 +148,10 @@
                                 <div class="row justify-content-center">
                                     <div class="col-7">
                                         <h4 class="project-title">Ellipsis</h4>
-                                        <p class="project-desc">A full stack project developed as a collaborative storywriting platform. Users can log into their accounts
-                                            and create or contribute to stories. When a story is finished, it can be published or archived.</p>
+                                        <p class="project-desc">A full stack project developed as a collaborative storywriting platform. The projects leverages
+                                            knowledge of relational databases and php to do the back-end work and HTML/CSS/JS to deliver the front-end. Built using the
+                                            Google Cloud Platform and hosted on Heroku.
+                                        </p>
                                         <div class="row justify-content-center space-button">
                                             <a href="https://github.com/jy4uk/ellipsis" target="_blank" class="btn repo-button">See the Repo</a>
                                         </div>
@@ -197,7 +200,7 @@
             <!--END OF TRYING-->
 
         <!--Experience-->
-        <div id="experience-section" class="experience">
+        <div data-aos="fade-up" data-aos-offset="200"  id="experience-section" class="experience">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -228,7 +231,7 @@
                           </ul>
                           
                           <div class="tab-content">
-                            <div id="ta" class="tab-pane fade in active">
+                            <div id="ta" class="tab-pane fade-in active">
                               <h3>Teaching Assistant</h3>
                               <h8 id="job-location" class="uva">University of Virginia</h8>
                               <br>
@@ -264,7 +267,7 @@
                               </ul>
                             </div>
                             <div id="your-company" class="tab-pane fade">
-                                <h3>Your Company?</h3>
+                                <h3 id=whatsnext>Your Company?</h3>
                                 <h8 id="job-location" class="uva">Where Your Company is Located</h8>
                                 <br>
                                 <h8>Post-Grad May 2021</h8>
@@ -282,7 +285,7 @@
         </div>
 
         <!--Contact-->
-        <div id="contact-section" class="contact">
+        <div data-aos="fade-up" data-aos-offset="200"  id="contact-section" class="contact">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -291,7 +294,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <p>I am currently seeking employment and am open for interviews! <br>Feel free to email me at jy4uk@virginia.edu or click the button
+                        <p>I am currently seeking employment and am open for interviews! <br>Feel free to email me at <a href="mailto:jy4uk@virginia.edu">jy4uk@virginia.edu</a> or click the button
                             below to open the mail app directly!
                         </p>
                     </div>
@@ -310,6 +313,22 @@
         </footer>
 
 
+        <script>
+            var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-70px";
+            }
+            prevScrollpos = currentScrollPos;
+            }
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
         <!--BOOSTRAP JS SCRIPTS-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
