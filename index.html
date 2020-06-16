@@ -313,18 +313,6 @@
         </footer>
 
 
-        <script>
-            var prevScrollpos = window.pageYOffset;
-                window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos + 10) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-70px";
-            }
-            prevScrollpos = currentScrollPos;
-            }
-        </script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init();
