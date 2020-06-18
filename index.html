@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <script>
+        $(window).scroll(function() {
+        if ($(this).scrollTop() > 450) {
+        $('nav').stop().fadeIn(800); 
+        } else {$('nav').stop().fadeOut(800);
+        };
+        });
+    </script>
     <title>James Yang | Software Developer</title>
     </head>
 
@@ -16,14 +25,14 @@
     <body>
 
         <!--NAVBAR-->
-        <nav id="navbar" class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+        <nav id="navbar" class="navbar fixed-top navbar-expand-sm navbar-dark navbar-bg-color">
             <a class="navbar-brand" href="#"><img src="resources/brandimage.png" alt="James Yang"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
               <div id="navbarSupportedContent" class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                <ul class="navbar-nav ml-auto">
+                <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#about-section">About</a>
                     </li>
@@ -57,9 +66,9 @@
                 <div class="row ">
                     <div class="col-6">
                         <p class="short-intro intro-paragraph">
-                            I am fourth-year student at the University of Virginia. I am primarily interested in <span class="development">full stack</span>
-                            or <span class= development>back-end</span> development, but recently I have been learning
-                            and thoroughly enjoying <span class="development">front-end</span> development as well!
+                            I am fourth-year student at the University of Virginia. I am primarily interested in <span class="development staticorange">full stack</span>
+                            or <span class="development staticorange">back-end</span> development, but recently I have been learning
+                            and thoroughly enjoying <span class="development staticorange">front-end</span> development as well!
                         </p>
                     </div>
                 </div>
@@ -73,7 +82,7 @@
         </div>
 
         <!--ABOUT-->
-        <div data-aos="fade-up" data-aos-offset="200" id="about-section" class="about">
+        <div data-aos="fade-up" data-aos-duration="1000" aos-mirror="true" data-aos-easing="ease-in-out" data-aos-offset="200" id="about-section" class="about">
             <div class="container" >
                 <div class="row">
                     <div class="col">
@@ -83,7 +92,7 @@
                 <div class="row">
                     <div class="col-7">
                         <p class="about-me">
-                            Hello! I'm James, a Computer Science and Music double major at the <span><a class="uva" target="_blank" href="https://www.virginia.edu">University of Virginia</a></span>. 
+                            Hello! I'm James, a Computer Science and Music double major at the <span><a class="orange uva" target="_blank" href="https://www.virginia.edu">University of Virginia</a></span>. 
                             I am currently based in Charlottesville, VA and searching for a full-time software development position.
                             I am passionate about technology and the role it plays in moving society forward and developing our world. 
                         </p>
@@ -123,7 +132,7 @@
         </div>
 
         <!--Projects-->
-        <div data-aos="fade-up" data-aos-offset="200" id="my-projects" class="projects">
+        <div  data-aos="fade-up" data-aos-duration="1000" aos-mirror="true" data-aos-easing="ease-in-out" data-aos-offset="200" id="my-projects" class="projects">
             <!--TRYING SOMETHING NEW-->
             <div class="container">
                 <div class="row">
@@ -134,7 +143,7 @@
                 <div class="row">
                     <div class="col">
                         <p id="project-descriptor">I have been working on many projects since I started coding. Here a few that I am especially proud of! 
-                            <span class="github">See the rest of my work on <a target="_blank" href="https://www.github.com/jy4uk">Github</a></span>.
+                            <span class="github">See the rest of my work on <a class="orange link" target="_blank" href="https://www.github.com/jy4uk">Github</a></span>.
                         </p>
                         
                     </div>
@@ -149,7 +158,7 @@
                                     <div class="col-7">
                                         <h4 class="project-title">Ellipsis</h4>
                                         <p class="project-desc">A full stack project developed as a collaborative storywriting platform. The projects leverages
-                                            knowledge of relational databases and php to do the back-end work and HTML/CSS/JS to deliver the front-end. Built using the
+                                            knowledge of relational databases and PHP to do the back-end work and HTML/CSS/JS to deliver the front-end. Built using the
                                             Google Cloud Platform and hosted on Heroku.
                                         </p>
                                         <div class="row justify-content-center space-button">
@@ -200,7 +209,7 @@
             <!--END OF TRYING-->
 
         <!--Experience-->
-        <div data-aos="fade-up" data-aos-offset="200"  id="experience-section" class="experience">
+        <div  data-aos="fade-up" data-aos-duration="1000" aos-mirror="true" data-aos-easing="ease-in-out" data-aos-offset="200"  id="experience-section" class="experience">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -217,23 +226,24 @@
                     <div class="col">
                         <ul class="nav nav-tabs">
                             <li class="active">
-                                <a id="job-title" data-toggle="tab" href="#ta">Teaching Assistant</a>
+                                <a id="job-title" class="orange" data-toggle="tab" href="#ta">Teaching Assistant</a>
                             </li>
                             <li>
-                                <a id="job-title" data-toggle="tab" href="#sep">Summer Enrichment Program</a>
+                                <a id="job-title" class="orange" data-toggle="tab" href="#sep">Summer Enrichment Program</a>
                             </li>
                             <li>
-                                <a id="job-title" data-toggle="tab" href="#tutoring">Mathematics Tutor</a>
+                                <a id="job-title" class="orange" data-toggle="tab" href="#tutoring">Mathematics Tutor</a>
                             </li>
                             <li>
-                                <a id="job-title" data-toggle="tab" href="#your-company">What's Next?</a>
+                                <a id="job-title" class="orange" data-toggle="tab" href="#your-company">What's Next?</a>
                             </li>
                           </ul>
                           
                           <div class="tab-content">
                             <div id="ta" class="tab-pane fade-in active">
-                              <h3>Teaching Assistant</h3>
-                              <h8 id="job-location" class="uva">University of Virginia</h8>
+                              <br>
+                              <h4 class="jobname">Teaching Assistant</h4>
+                              <h8 id="job-location" class="staticorange uva">University of Virginia</h8>
                               <br>
                               <h8>Jan 2019 - Present</h8>
                               <ul>
@@ -244,8 +254,9 @@
                               </ul>
                             </div>
                             <div id="sep" class="tab-pane fade">
-                              <h3>Summer Enrichment Program</h3>
-                              <h8 id="job-location" class="uva">University of Virginia</h8>
+                              <br>
+                              <h4 class="jobname">Summer Enrichment Program</h4>
+                              <h8 id="job-location" class="staticorange uva">University of Virginia</h8>
                               <br>
                               <h8>Jun 2019 - August 2019</h8>
                               <ul>
@@ -257,8 +268,9 @@
                               </ul>
                             </div>
                             <div id="tutoring" class="tab-pane fade">
-                              <h3>Mathematics Tutor</h3>
-                              <h8 id="job-location" class="uva">Charlottesville, VA</h8>
+                              <br>
+                              <h4 class="jobname">Mathematics Tutor</h4>
+                              <h8 id="job-location" class="staticorange uva">Charlottesville, VA</h8>
                               <br>
                               <h8>May 2019 - Jan 2020</h8>
                               <ul>
@@ -267,8 +279,9 @@
                               </ul>
                             </div>
                             <div id="your-company" class="tab-pane fade">
-                                <h3 id=whatsnext>Your Company?</h3>
-                                <h8 id="job-location" class="uva">Where Your Company is Located</h8>
+                                <br>
+                                <h4 class="jobname" id=whatsnext>Your Company?</h4>
+                                <h8 id="job-location" class="staticorange uva">Where Your Company is Located</h8>
                                 <br>
                                 <h8>Post-Grad May 2021</h8>
                                 <ul>
@@ -285,7 +298,7 @@
         </div>
 
         <!--Contact-->
-        <div data-aos="fade-up" data-aos-offset="200"  id="contact-section" class="contact">
+        <div  data-aos="fade-up" data-aos-duration="1000" aos-mirror="true" data-aos-easing="ease-in-out" data-aos-offset="200"  id="contact-section" class="contact">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -294,7 +307,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <p>I am currently seeking employment and am open for interviews! <br>Feel free to email me at <a href="mailto:jy4uk@virginia.edu">jy4uk@virginia.edu</a> or click the button
+                        <p>I am currently seeking employment and am open for interviews! <br>Feel free to email me at <a class="orange link" href="mailto:jy4uk@virginia.edu">jy4uk@virginia.edu</a> or click the button
                             below to open the mail app directly!
                         </p>
                     </div>
@@ -309,7 +322,7 @@
 
 
         <footer>
-            <p>This website was built from scratch! Check out my github repo for the source code! <a id="footerlink" target="_blank" href="https://www.github.com/jy4uk/resumeWebsite">James Yang | CO 2021</a></p>
+            <p>This website was built from scratch! Check out my github repo for the source code! <a class="link orange" target="_blank" href="https://www.github.com/jy4uk/resumeWebsite">James Yang | CO 2021</a></p>
         </footer>
 
 

@@ -1,30 +1,50 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Comfortaa', cursive;
+}
+
+body{
+    background-color: #042633 !important;
+    padding-top: 120px;
+    color: white !important;
+}
+
+.navbar{
+    display: none;
+}
+
+.navbar-bg-color {
+    background-color: #293131 !important;   
+    opacity: 0.8;
+}
+
+
+.nav-link {
+    font-family: 'Comfortaa', cursive;
+    color: white ;
 }
 
 #resume {
-    color: teal;
+    color: #46c1f0 !important;
+    font-weight: bold;
 }
 
 #resume:hover {
-    color: white;
+    color: yellow !important;
 }
 
-.nav-link {
-    font-family: 'Courier New', Courier, monospace
-}
-
-body {
-    padding-top: 120px;
-}
 
 #hello-world{
     font-weight: bold;
+    color: white;
     margin-bottom: 1em;
 }
 
+#jamesyang{
+    color:#46c1f0;
+}
+
 #i-code {
-    color: gray;
+    color: rgb(155, 155, 155);
 }
 
 .intro-statement, .intro-paragraph{
@@ -36,31 +56,36 @@ body {
     padding-bottom: 4rem;
 }
 
-.development{
-    color: #71a0ff;
-    font-weight: bold;
+.orange{
+    color: #46c1f0;
 }
 
-body{
-    background-color: floralwhite !important;
+.development{
+    font-weight: bold;
+    color: #46c1f0 !important;
 }
+
 
 .button, .btn {
-    background-color: #a4c2ff!important;
+    background-color: #21b5ee!important;
     border: none;
     padding: 15px 28px;
     text-align: center;
     margin: 4px 2px;
     cursor: pointer;
     font-size: 16px;
-    color: black;
+    color: white;
     border-radius: 10px;
 }
 
 .button:hover {
     background-color: #71a0ff;
+    color: yellow;
 }
 
+.btn:hover {
+    color: yellow !important;
+}
 
 .about{
     padding-top: 10rem;
@@ -74,31 +99,43 @@ body{
     padding-bottom: 5px;
 }
 
+.link{
+    font-weight: bold;
+}
+
 .uva{
     font-weight: bold;
     font-style: italic;
-    color: #73a1ff;
 }
 
 #mypic {
     width: 150%;
     border-radius: 8px;
-    box-shadow: 10px 10px 5px gray ;
+    box-shadow: 10px 10px 5px #0f2133 ;
 }
 
 #technologies {
     padding-left: 2rem;
-    color: #71a0ff;
+    color: #46c1f0 !important;
     font-weight: bold;
+    list-style-type: none;
 }
 
 .project-title{
     font-weight: bold;
-    color:black;
+    color:#46c1f0;
 }
 
-.card-text{
-    color: black;
+.btn{
+    color: floralwhite !important;
+}
+
+.staticorange{
+    color:yellow ;
+}
+
+.orange:hover{
+    color:yellow;
 }
 
 .projects {
@@ -114,10 +151,6 @@ body{
     padding-bottom: 3rem;
 }
 
-.card{
-    background-color: #73a1ff !important;
-}
-
 .contact{
     padding-top: 10rem;
 }
@@ -126,16 +159,15 @@ body{
     padding-right: 6rem;
     font-size: 1.25rem;
     font-weight: bold;
-    color: #73a1ff;
+}
+
+.jobname{
+    text-decoration: underline;
 }
 
 #job-location{
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-#footer-link{
-    color:#73a1ff;
 }
 
 footer {
@@ -157,20 +189,19 @@ footer {
 }
 
 .yellow-warning{
-    color: #f9b100;
     font-weight: bold;
-}
-
-.carousel-control-next-icon, .carousel-control-prev-icon{
-    filter: invert();
+    color: yellow;
 }
 
 .space-button{
     padding-top: 1.6rem;
 }
 
+
+
 #navbar {
-    transition: top 0.5s;
+    position: fixed;
+    
 }
 
 .sideways-left {
@@ -179,3 +210,4 @@ footer {
     position: fixed;
     transform: rotate(90deg);
 }
+
