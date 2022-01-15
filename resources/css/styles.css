@@ -56,7 +56,7 @@ body{
     padding-bottom: 4rem;
 }
 
-.orange{
+.link-text{
     color: #46c1f0;
 }
 
@@ -134,7 +134,7 @@ body{
     color:yellow ;
 }
 
-.orange:hover{
+.link-text:hover{
     color:yellow;
 }
 
